@@ -1,20 +1,50 @@
-#  Synthetic Data Generation using DDPM
+# 📊 Synthetic Data Generation (DDPM)
 
-##  Overview
-This project generates synthetic customer churn data using a DDPM model from SynthCity and evaluates its quality against real data.
+## 🚀 Overview
+Generates synthetic customer churn data using a DDPM model (SynthCity) and evaluates its quality against real data.
 
 ---
 
 ## 📁 Dataset
-- File: `botswana_bank_customer_churn.csv`
-- Target column: `Churn Flag`
-- Removes unnecessary and sensitive columns
-- Drops missing values
+- `botswana_bank_customer_churn.csv`
+- Target: `Churn Flag`
+- Drops irrelevant columns and missing values
 
 ---
 
 ## ⚙️ Installation
-Install required dependencies:
-
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn torch synthcity
+```
+
+---
+
+## ▶️ Usage
+```bash
+python your_script_name.py
+```
+
+---
+
+## 🧠 Features
+- Train DDPM model
+- Generate synthetic dataset
+- Save output: `synthetic_data_generated.csv`
+
+---
+
+## 📊 Evaluation
+- Correlation similarity (Frobenius norm)
+- AUC score (Random Forest)
+- Distribution plots (real vs synthetic)
+
+---
+
+## ⚠️ Notes
+- CPU training may be slow
+- Increase iterations for better results
+
+---
+
+## 📜 License
+For academic and research use only.
